@@ -1,0 +1,97 @@
+
+    body{
+        font-size: 16px;
+    }
+    .container {
+        display: flex;
+        flex-wrap: wrap;
+        margin-top:200px;
+        padding: 0 4px;
+        justify-content: center;
+      
+    }
+    .heading {
+        text-align: center;
+        margin-top: 20px;
+        width: 100%;
+        font-size: 175%;
+    }
+    
+    .container .box {
+        flex: 1 0 21%; 
+        box-sizing: border-box;
+        margin: 5px;
+        padding: 20px;
+        border: 1px solid rgb(19, 17, 17);
+        position: relative;
+    }
+   .box p{
+        margin-top:30px;
+        font-size: 100%;
+    }
+
+    .container .box .tag1 {
+        position: absolute;
+        top: 0;
+        right: 0;
+        background-color: yellow;
+        padding: 5px;        
+        border:solid 1px black;
+        font-family: Arial, sans-serif;
+        width:100px;
+        text-align: center;
+    }
+    
+    .container .box .tag2 {
+        position: absolute;
+        top: 0;
+        right: 0;
+        background-color: rgb(255, 132, 0);
+        padding: 5px;        
+        border:solid 1px black;
+        font-family: Arial, sans-serif;
+        width:100px;
+        text-align: center;
+    }
+    
+    .container .box .tag3 {
+        position: absolute;
+        top: 0;
+        right: 0;
+        background-color: rgb(87, 122, 228);
+        padding: 5px;        
+        border:solid 1px black;
+        font-family: Arial, sans-serif;
+        width:100px;
+        text-align: center;
+    }
+    
+  
+ 
+    @media (min-width: 768px) and (max-width: 991px) {
+        .container .box {
+            flex: 0 0 48%; 
+        }
+        .container .box:nth-child(3) {
+            flex: 0 0 100%;
+        }
+    }
+
+    
+    @media (min-width: 992px) {
+        .container .box {
+            flex: 0 0 31%;
+        }
+    }
+    
+@media (max-width: 767px) {
+    .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .container .box {
+        flex: 0 0 100%;
+    }
+}
+
